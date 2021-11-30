@@ -165,15 +165,6 @@ static command_error_t gpio_command_handler(const uint8_t *buffer, size_t len, b
 	}
 
 	return COMMAND_OK;
-
-	/* TODO Implement this function
-	 * Note: Implement only handling of LEDs pins
-	 * LED4 GPIOD 12
-	 * LED3 GPIOD 13
-	 * LED5 GPIOD 14
-	 * LED6 GPIOD 15
-	 */
-	return COMMAND_UNKNOWN_ERROR;
 }
 
 void StartUdpServerTask(void const *argument)
