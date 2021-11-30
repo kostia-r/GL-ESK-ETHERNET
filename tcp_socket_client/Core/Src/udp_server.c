@@ -129,7 +129,7 @@ static command_error_t gpio_command_handler(const uint8_t *buffer, size_t len, b
 	char cmd_gpio[1];
 	int pin_num = 0;
 
-	if (buffer == NULL || len == 0 || len > CMD_BUFFER_MAX_LEN)
+	if (buffer == NULL || len == 0 || len > CMD_BUFFER_MAX_LEN || state == NULL || pin == NULL)
 	{
 		return COMMAND_ERR_ARGUMENT;
 	}
